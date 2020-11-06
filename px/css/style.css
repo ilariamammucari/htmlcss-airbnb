@@ -19,6 +19,7 @@
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	cursor: pointer;
 }
 
 /* immagini nei box */
@@ -26,7 +27,15 @@
 	background-image: url(../img/roma.jpg);
 }
 
-/* effetto su foto di sfondo */
+#torino {
+	background-image: url(../img/torino.jpg);
+}
+
+#livorno {
+	background-image: url(../img/livorno.jpg);
+}
+
+/* caratteristiche layover su foto di sfondo */
 .container .box .layover {
 	width: 100%;
 	height: 100%;
@@ -45,12 +54,12 @@
 	text-shadow: 4px 4px black;
 }
 
-/* effetto su foto */
+/* effetto layover su foto */
 .box:hover .layover {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-/* effetto su testo */
+/* effetto del testo */
 .box:hover h2 {
 	text-shadow: none;
 }
