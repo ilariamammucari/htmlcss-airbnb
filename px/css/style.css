@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* container */
+.container {
+	width: 960px;
+	height: 322px;
+	margin: auto;
+}
+
+
+/* box */
+.container .box {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+/* immagini nei box */
+#roma {
+	background-image: url(../img/roma.jpg);
+}
+
+/* effetto su foto di sfondo */
+.container .box .layover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* caratteristiche scritta*/
+.box .layover h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 4px 4px black;
+}
+
+/* effetto su foto */
+.box:hover .layover {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* effetto su testo */
+.box:hover h2 {
+	text-shadow: none;
+}
